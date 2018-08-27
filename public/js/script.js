@@ -14,6 +14,8 @@ recognition.lang = 'pt-BR';
 recognition.interimResults = false;
 recognition.maxAlternatives = 1;
  
+socket.emit('chat message', null);
+
 btnmicrofone.addEventListener('click', () => {
   recognition.start();
   btnmicrofone.className = "buttonMicOn";
